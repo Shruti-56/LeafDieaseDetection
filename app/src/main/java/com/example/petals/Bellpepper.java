@@ -217,8 +217,7 @@ public class Bellpepper extends AppCompatActivity {
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
             float[] confidences = outputFeature0.getFloatArray();
-            // find the index of the class with the bigges
-            // t confidence.
+            // find the index of the class with the biggest confidence.
             int maxPos = 0;
             float maxConfidence = 0;
             for (int i = 0; i < confidences.length; i++) {
