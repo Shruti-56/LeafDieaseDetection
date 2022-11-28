@@ -1,0 +1,4 @@
+Corn___Cercospora_leaf_spot Gray_leaf_spot
+Corn___Common_rust
+Corn___Northern_Leaf_Blight
+Corn___healthy

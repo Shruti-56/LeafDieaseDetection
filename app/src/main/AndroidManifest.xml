@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.petals">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/cropatho"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/cropatho"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Petals"
+        tools:targetApi="31">
+        <activity
+            android:name=".TestingActivity"
+            android:exported="false">
+
+
+
+        </activity>
+        <activity
+            android:name=".CornActivity"
+            android:parentActivityName=".Card"
+            android:exported="false" />
+        <activity
+            android:name=".GrapeActivity"
+            android:parentActivityName=".Card"
+            android:exported="false" />
+        <activity
+            android:name=".PotatoActivity"
+            android:parentActivityName=".Card"
+            android:exported="false" />
+        <activity
+            android:name=".RiceActivity"
+            android:parentActivityName=".Card"
+            android:exported="false" />
+        <activity
+            android:name=".WheatActivity"
+            android:parentActivityName=".Card"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Bellpepper"
+            android:parentActivityName=".Card"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Card"
+            android:exported="false">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

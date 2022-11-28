@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded1"
+    android:orientation="vertical"
+    tools:context=".Bellpepper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#D9F1CC"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#D9F1CC"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="50dp"
+                    android:background="@drawable/rounded1"
+                    android:backgroundTint="#D66A48"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/belly"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="#D9F1CC" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="#D66A48"
+                    android:gravity="center"
+                    android:text="RESULT"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txt_background"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:visibility="invisible"
+                    android:layout_margin="10dp"
+                    android:text="sample" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/capture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#D66A48"
+                        android:text="CAPTURE IMAGE"
+                        android:textSize="20dp"
+                        app:shapeAppearanceOverlay="@style/submit" />
+
+                    <Button
+                        android:id="@+id/predict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#D66A48"
+                        android:text="PREDICT bUTTON"
+                        android:textSize="20dp"
+                        app:shapeAppearanceOverlay="@style/submit" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
