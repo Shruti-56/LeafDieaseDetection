@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import com.example.petals.ml.BellpepperInt8;
 import com.example.petals.ml.BellpepperModelmob;
@@ -46,7 +47,7 @@ public class GrapeActivity extends AppCompatActivity {
     int imageSize = 224;
     String str_Grape_Blackrot = "Control : Mummified berries left on vines should be collected and destroyed. Cultivation practices should ensure free circulation of air. Spraying West India Bordeaux mixture (4:4:100) once or twice on young bunches prevents the infection.";
     String str_Grape_Esca = "For Esca (Black Measles) in Grape leaves, PI Industries SECTIN FUNGICIDE can be an effective spray to use. It is advised to be sprayed with 2gm/liter of water.";
-    String str_Leaf_blight = "For Esca (Black Measles) in Grape leaves, PI Industries SECTIN FUNGICIDE can be an effective spray to use. It is advised to be sprayed with 2gm/liter of water.";
+    String str_Leaf_blight = "If the disease on the berries is not controlled in the field, it can lead to berry rotting during transit and storage. Bordeaux mixture (1.0%), Mancozeb (0.2%), Topsin-M (0.1%), Ziram (0.35%) or Captan (0.2%) is to be sprayed alternatively at weekly intervals from June-August and again from December until harvest to keep this disease under check.";
     String str_Grape_healthy = "Grape leaf seems to be healthy. This means there is no need to spray any fungicide. However, please have a look at other leaves as there might be some part of the plant which has just started to get infected with some disease.";
 
 
